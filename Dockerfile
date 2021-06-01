@@ -8,7 +8,10 @@ ENV HOME /home/${NB_USER}
 
 USER root
 
-COPY --from=hackfin/myhdl_v2we /home/testing/notebooks ${HOME}
+RUN mv /home/testing ${HOME} && usermod --login jovyan testing
+
+COPY --from=hackfin/myhdl_v2we /home/testing/notebooks ${HOME}/notebooks
 RUN chown -R ${NB_UID} ${HOME}
 
+WORKDIR ${HOME}
 USER ${USER}
