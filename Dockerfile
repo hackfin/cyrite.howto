@@ -1,14 +1,12 @@
 FROM hackfin/myhdl_v2we
 
-ARG NB_USER=jovyan
+ARG MY_USER=testing
 ARG NB_UID=1000
-ENV USER ${NB_USER}
+ENV USER ${MY_USER}
 ENV NB_UID ${NB_UID}
-ENV HOME /home/${NB_USER}
+ENV HOME /home/${MY_USER}
 
 USER root
-
-RUN mv /home/testing ${HOME} && usermod --login jovyan testing
 
 ENV PATH "$PATH:${HOME}/.local/bin"
 
