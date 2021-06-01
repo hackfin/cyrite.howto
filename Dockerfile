@@ -10,6 +10,8 @@ USER root
 
 RUN mv /home/testing ${HOME} && usermod --login jovyan testing
 
+ENV PATH "$PATH:${HOME}/.local/bin"
+
 COPY --from=hackfin/myhdl_v2we /home/testing/notebooks ${HOME}/notebooks
 RUN chown -R ${NB_UID} ${HOME}
 
