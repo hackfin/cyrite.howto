@@ -2,4 +2,4 @@
 
 This is work in progress. Don't expect much.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we.git/HEAD?filepath=notebooks%2Findex.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we.git/HEAD?filepath=examples%2Findex.ipynb)
