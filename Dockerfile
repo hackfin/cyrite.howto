@@ -1,4 +1,4 @@
-FROM hackfin/myhdl_v2we:signedness
+FROM hackfin/myhdl_v2we:rc0.0
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
