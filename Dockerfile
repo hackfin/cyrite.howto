@@ -12,11 +12,10 @@ RUN mv /home/testing ${HOME} && usermod --login jovyan testing
 
 ENV PATH "$PATH:${HOME}/.local/bin"
 
-COPY --from=hackfin/myhdl_v2we:rc0.2 /home/testing/notebooks ${HOME}/notebooks
+COPY --chown=${USER}:users --from=hackfin/myhdl_v2we:rc0.2 \
+	/home/testing/notebooks ${HOME}/notebooks
 
-COPY ./examples ${HOME}/examples
-
-RUN chown -R ${NB_UID} ${HOME}
+COPY --chown=${USER}:users ./examples ${HOME}/examples
 
 WORKDIR ${HOME}
 USER ${USER}
