@@ -1,4 +1,4 @@
-FROM hackfin/myhdl_v2we:rc0.1
+FROM hackfin/myhdl_v2we:rc0.2
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
@@ -12,7 +12,7 @@ RUN mv /home/testing ${HOME} && usermod --login jovyan testing
 
 ENV PATH "$PATH:${HOME}/.local/bin"
 
-COPY --from=hackfin/myhdl_v2we:rc0.1 /home/testing/notebooks ${HOME}/notebooks
+COPY --from=hackfin/myhdl_v2we:rc0.2 /home/testing/notebooks ${HOME}/notebooks
 
 COPY ./examples ${HOME}/examples
 
