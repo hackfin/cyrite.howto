@@ -1,4 +1,6 @@
-FROM hackfin/myhdl_v2we:rc0.2
+FROM hackfin/myhdl_v2we:rc0.3 AS template
+
+FROM template
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
@@ -12,7 +14,8 @@ RUN mv /home/testing ${HOME} && usermod --login jovyan testing
 
 ENV PATH "$PATH:${HOME}/.local/bin"
 
-COPY --chown=${USER}:users --from=hackfin/myhdl_v2we:rc0.2 \
+
+COPY --chown=${USER}:users --from=template \
 	/home/testing/notebooks ${HOME}/notebooks
 
 COPY --chown=${USER}:users ./examples ${HOME}/examples

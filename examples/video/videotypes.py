@@ -1,8 +1,6 @@
-from myirl.library.style_hdl import *
 from myirl.library.bulksignals import bulkwrapper
 from myirl.targets import vhdl
-
-Signal = HDLSignal
+from myirl import *
 
 @bulkwrapper(vhdl)
 class VideoPattern:
