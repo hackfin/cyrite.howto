@@ -17,4 +17,4 @@ Changelog:
 * 28.6.2021: Vector extensions, bulk wrapper and library framework
 * 15.7.2021: Bulk wrapper and @pipeline generators
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we.git/typechecking?filepath=examples%2Findex.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we.git/typechecking?urlpath=%2Ftree%2Fexamples%2Findex.ipynb)
