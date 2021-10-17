@@ -18,4 +18,4 @@ Changelog:
 * 15.7.2021: Bulk wrapper and @pipeline generators
 * 24.9.2021: Use typechecking branch and jupyterlab (experimental)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/jupyterlab?filepath=examples%2Findex.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/master?urlpath=lab/tree/examples/index.ipynb)
