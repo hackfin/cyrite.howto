@@ -19,4 +19,4 @@ Changelog:
 * 17.10.2021: Migrate to typechecking, py3.10 and jupyterlab
 * 23.10.2021 : Collector/extension revamp, factory class fixes
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/jupyterlab?urlpath=lab/tree/examples/index.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/master?urlpath=lab/tree/examples/index.ipynb)
