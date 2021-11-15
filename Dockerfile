@@ -1,4 +1,4 @@
-FROM hackfin/myhdl_v2we:tck0.2a AS template
+FROM hackfin/myhdl_v2we:tck0.3 AS template
 
 FROM template
 
