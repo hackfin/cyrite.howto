@@ -1,4 +1,4 @@
-FROM hackfin/myhdl_v2we:tck0.3 AS template
+FROM hackfin/myhdl_v2we:sim-0.1 AS template
 
 FROM template
 
@@ -19,6 +19,7 @@ COPY --chown=${USER}:users --from=template \
 	/home/testing/notebooks ${HOME}/notebooks
 
 COPY --chown=${USER}:users ./examples ${HOME}/examples
+COPY --chown=${USER}:users ./*.ipynb ${HOME}/
 
 WORKDIR ${HOME}
 USER ${USER}
