@@ -13,10 +13,11 @@ Limitations:
 * No built-in simulator
 
 Changelog:
-* 9.6.2021: more consistent signedness support in myhdl signal emulation
-* 28.6.2021: Vector extensions, bulk wrapper and library framework
-* 15.7.2021: Bulk wrapper and @pipeline generators
-* 17.10.2021: Migrate to typechecking, py3.10 and jupyterlab
+* 9.6.2021   : more consistent signedness support in myhdl signal emulation
+* 28.6.2021  : Vector extensions, bulk wrapper and library framework
+* 15.7.2021  : Bulk wrapper and @pipeline generators
+* 17.10.2021 : Migrate to typechecking, py3.10 and jupyterlab
 * 23.10.2021 : Collector/extension revamp, factory class fixes
+* 25.1.2022  : Yosys RTLIL and CXXRTL support
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/yosys?urlpath=lab/tree/index.ipynb)
