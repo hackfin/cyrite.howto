@@ -20,4 +20,4 @@ Changelog:
 * 23.10.2021 : Collector/extension revamp, factory class fixes
 * 25.1.2022  : Yosys RTLIL and CXXRTL support
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/yosys?urlpath=lab/tree/index.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/master?urlpath=lab/tree/examples/index.ipynb)
