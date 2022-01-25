@@ -9,8 +9,10 @@ The general concept:
 * Extend by derivation.
 
 Limitations:
-* modular VHDL output and GHDL simulator only
-* No built-in simulator
+* modular VHDL output and GHDL simulator
+* Experimental: RTLIL conversion via yosys, rudimentary CXXRTL simulator interfacing
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/master?urlpath=lab/tree/examples/index.ipynb)
 
 Changelog:
 * 9.6.2021   : more consistent signedness support in myhdl signal emulation
@@ -19,5 +21,3 @@ Changelog:
 * 17.10.2021 : Migrate to typechecking, py3.10 and jupyterlab
 * 23.10.2021 : Collector/extension revamp, factory class fixes
 * 25.1.2022  : Yosys RTLIL and CXXRTL support
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/master?urlpath=lab/tree/examples/index.ipynb)
