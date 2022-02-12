@@ -12,7 +12,7 @@ Limitations:
 * modular VHDL output and GHDL simulator
 * Experimental: RTLIL conversion via yosys, rudimentary CXXRTL simulator interfacing
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/master?urlpath=lab/tree/examples/index.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/master?urlpath=lab/tree/index.ipynb)
 
 Changelog:
 * 9.6.2021   : more consistent signedness support in myhdl signal emulation
