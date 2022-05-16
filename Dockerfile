@@ -1,4 +1,4 @@
-FROM hackfin/myhdl_v2we:vsim0.1 AS template
+FROM cyrite:vlog-0.1-rc0 AS template
 
 FROM template
 

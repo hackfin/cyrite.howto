@@ -118,7 +118,7 @@ class BarrelShifterGenerator(LibraryModule):
 					 )
 			
 		@always(clk.posedge)
-		def assign():
+		def result_assign():
 			if ce == True:
 				result.next = worker[W_POWER]
 			
