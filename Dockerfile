@@ -1,4 +1,4 @@
-FROM cyrite:vlog-0.1-rc0 AS template
+FROM hackfin/cyrite:vlog-0.1-rc0 AS template
 
 FROM template
 
