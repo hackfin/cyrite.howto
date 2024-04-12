@@ -55,8 +55,8 @@ class BarrelShifterGenerator(LibraryModule):
 	def shifter_stage(self,
 		w_in : Signal,
 		w_out : Signal.Output,
-		msb,
-		nmux : int, sbit,
+		msb : Signal,
+		nmux : int, sbit : Signal,
 		asr : bool, rotate : bool
 	):
 		inst = []
