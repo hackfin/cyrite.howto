@@ -1,5 +1,7 @@
 from myirl.emulation.cyhdl import *
 
+# This is an approach to ad-hoc cythonize Python code to make it run faster
+
 import pyximport
 pyximport.install(language_level=3)
 
