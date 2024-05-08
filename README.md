@@ -1,19 +1,14 @@
-# myHDL v2we (van twee walletjes eten) prototype examples
+# Cyrite HDL HOWTO and examples
 
-This is a prototyping environment Docker container to experiment with an alternative kernel ('myIRL') and revisited myHDL concepts.
+This is a collection of Jupyter notebooks to provide examples and an ad-hoc reference for the Cyrite hardware development language (in fact: Python). Cyrite HDL (short: cyhdl) is the result of the former myhdl.v2we prototype.
+CyHDL is in many ways like MyHDL -- on the front. The major differences:
 
-**Cyrite** and myhdl `intbv` compatibility branch used (migration safe)
+* Strict interface typing, modular output to VHDL and Verilog dialects
+* Blackbox support for external HDL modules
+* Simulation APIs for compiled simulations (closed source HDL)
+* Performant kernel for procedural generation of logic and interfaces
 
-The general concept:
-* Run binder (see button below), create, simulate and document a hardware design from within a Jupyter notebook
-* MyHDL -> MyIRL -> Transpilation -> target HDL, RTL
-* Extend by derivation.
-
-Limitations:
-* modular VHDL and Verilog (limited) output for GHDL and ICARUS simulator
-* Experimental: RTLIL conversion via yosys, rudimentary CXXRTL simulator interfacing
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/myhdl.v2we/verilog?urlpath=lab/tree/index.ipynb)
+A binder setup is currently under preparation.
 
 Changelog:
 * 9.6.2021   : more consistent signedness support in myhdl signal emulation
@@ -23,3 +18,5 @@ Changelog:
 * 23.10.2021 : Collector/extension revamp, factory class fixes
 * 25.1.2022  : Yosys RTLIL and CXXRTL support
 * 16.5.2022  : Verilog target, full intbv legacy compatibility behaviour
+* 8.5.2024   : The final draft for the CyriteHDL API
+
