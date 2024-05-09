@@ -1,4 +1,4 @@
-FROM hackfin/cyrite:latest AS template
+FROM hackfin/cyrite:0.1b-rc0 AS template
 
 FROM template
 
