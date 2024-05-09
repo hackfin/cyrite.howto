@@ -19,6 +19,7 @@ ENV PATH "$PATH:${HOME}/.local/bin"
 # 	/home/testing/notebooks ${HOME}/notebooks
 
 COPY --chown=${USER}:users ./examples ${HOME}/examples
+COPY --chown=${USER}:users ./howto ${HOME}/howto
 COPY --chown=${USER}:users ./*.ipynb ${HOME}/
 
 WORKDIR ${HOME}
