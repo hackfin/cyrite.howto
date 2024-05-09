@@ -1,8 +1,8 @@
-FROM hackfin/cyrite:vlog-0.1-rc0 AS template
+FROM hackfin/cyrite:latest AS template
 
 FROM template
 
-ARG NB_USER=jovyan
+ARG NB_USER=cyrite
 ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
@@ -10,7 +10,7 @@ ENV HOME /home/${NB_USER}
 
 USER root
 
-RUN mv /home/testing ${HOME} && usermod --login jovyan testing
+# RUN mv /home/testing ${HOME} && usermod --login cyrite testing
 
 ENV PATH "$PATH:${HOME}/.local/bin"
 
