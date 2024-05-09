@@ -15,8 +15,8 @@ USER root
 ENV PATH "$PATH:${HOME}/.local/bin"
 
 
-COPY --chown=${USER}:users --from=template \
-	/home/testing/notebooks ${HOME}/notebooks
+# COPY --chown=${USER}:users --from=template \
+# 	/home/testing/notebooks ${HOME}/notebooks
 
 COPY --chown=${USER}:users ./examples ${HOME}/examples
 COPY --chown=${USER}:users ./*.ipynb ${HOME}/
