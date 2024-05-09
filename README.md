@@ -8,14 +8,20 @@ CyHDL is in many ways like MyHDL -- on the front. The major differences:
 * Simulation APIs for compiled simulations (closed source HDL)
 * Performant kernel for procedural generation of logic and interfaces
 
-A binder setup is currently under preparation.
+Using the Jupyterlab IDE via the Binder below, HDL development
+and synthesis can happen in the browser without the needs to install
+software.
+
+Overview:
+
+* Generate hardware, simulate and draw waveforms
+* Co-Simulate synthesized logic against Python code via yosys/CXXRTL
+* HOWTO on migrating/enhancing MyHDL designs
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hackfin/cyrite.howto/master?urlpath=lab/tree/index.ipynb)
 
 Changelog:
-* 9.6.2021   : more consistent signedness support in myhdl signal emulation
-* 28.6.2021  : Vector extensions, bulk wrapper and library framework
-* 15.7.2021  : Bulk wrapper and @pipeline generators
-* 17.10.2021 : Migrate to typechecking, py3.10 and jupyterlab
-* 23.10.2021 : Collector/extension revamp, factory class fixes
+...
 * 25.1.2022  : Yosys RTLIL and CXXRTL support
 * 16.5.2022  : Verilog target, full intbv legacy compatibility behaviour
 * 8.5.2024   : The final draft for the CyriteHDL API
