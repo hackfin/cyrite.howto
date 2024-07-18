@@ -3,7 +3,7 @@
 
 from myirl.library.style_hdl import *
 import numpy
-from myirl import intbv, modbv
+from myirl.emulation.myhdl_intbv import intbv, modbv
 
 mat_jpeg_rgb2yuv = [
 	( 0.299,     0.587,           0.114),
